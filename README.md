@@ -18,6 +18,10 @@ tmux 1.9 or later. An unofficial Ubuntu 14.04 backport can be found here: https:
 Main commands and shortcuts
 ===========================
 
+**Layout (tmux-resurrect):**
+* **ctrl+a ctrl+s** save current layout (window, splits, working directories, ...)
+* **ctrl+a ctrl+r** restore saved layout
+
 **Windows:**
 * **ctrl+a c** to create a window
 * **ctrl+a X** to change window (where X is window's number)
