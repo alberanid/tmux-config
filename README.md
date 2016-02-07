@@ -39,4 +39,4 @@ Author and license
 ==================
 
     Davide Alberani <da@erlug.linux.it> (C) 2016
-    Released under the terms of the CC BY-SA license: https://creativecommons.org/licenses/by-sa/3.0/
+    Released under the terms of the CC BY-SA license: https://creativecommons.org/licenses/by-sa/4.0/
