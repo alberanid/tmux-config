@@ -1,13 +1,18 @@
 Installation
 ============
 
-    mkdir ~/.tmux
     git clone git://github.com/alberanid/tmux-config.git ~/.tmux
     ln -s ~/.tmux/tmux.conf ~/.tmux.conf
     cd ~/.tmux
     git submodule init
     git submodule update
     # now run tmux and press ctrl+a I
+
+
+Requirements
+============
+
+tmux 1.9 or later. An unofficial Ubuntu 14.04 backport can be found here: https://launchpad.net/~pi-rho/+archive/ubuntu/dev
 
 
 Main commands and shortcuts
