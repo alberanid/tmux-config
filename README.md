@@ -1,6 +1,7 @@
 Installation
 ============
 
+    mkdir ~/.tmux
     git clone git://github.com/alberanid/tmux-config.git ~/.tmux
     ln -s ~/.tmux/tmux.conf ~/.tmux.conf
     cd ~/.tmux
