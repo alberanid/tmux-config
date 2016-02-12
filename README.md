@@ -18,6 +18,8 @@ tmux 1.9 or later. An unofficial Ubuntu 14.04 backport can be found here: https:
 Main commands and shortcuts
 ===========================
 
+The default ctrl+b escape is remapped to **ctrl+a**.
+
 **Layout (tmux-resurrect):**
 * **ctrl+a ctrl+s** save current layout (window, splits, working directories, ...)
 * **ctrl+a ctrl+r** restore saved layout
@@ -35,6 +37,9 @@ Main commands and shortcuts
 
 **Copy mode:**
 * **ctrl+a [** enter copy mode (**ctrl+a PageUp** to move immediately)
+* **ctrl+<space>** begin to copy
+* **alt+w** copy selected text
+* **ctrl+]** paste copied text
 * **ESC** quit copy mode
 
 **Sessions:**
