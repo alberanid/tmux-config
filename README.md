@@ -31,7 +31,7 @@ The default ctrl+b escape is remapped to **ctrl+a**.
 
 **Splits:**
 * **ctrl+a v** split vertically
-* **ctrl+a h** split horizontally
+* **ctrl+a s** split horizontally
 * **ctrl+a Left/Right/Up/Down** move to another split
 * **ctrl+a ctrl+Left/Right/Up/Down** resize split
 
