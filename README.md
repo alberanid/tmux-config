@@ -34,12 +34,13 @@ The default ctrl+b escape is remapped to **ctrl+a**.
 * **ctrl+a s** split horizontally
 * **ctrl+a Left/Right/Up/Down** move to another split
 * **ctrl+a ctrl+Left/Right/Up/Down** resize split
+* **ctrl+a &lt;SPACE&gt;** convert a vertical split to horizontal and vice-versa
 
 **Copy mode:**
 * **ctrl+a [** enter copy mode (**ctrl+a PageUp** to move immediately)
-* **ctrl+<space>** begin to copy
-* **alt+w** copy selected text
-* **ctrl+]** paste copied text
+* **ctrl+&lt;space&gt;** begin to copy
+* **ctrl+w** copy selected text
+* **ctrl+a ]** paste copied text
 * **ESC** quit copy mode
 
 **Sessions:**
@@ -53,5 +54,5 @@ The default ctrl+b escape is remapped to **ctrl+a**.
 Author and license
 ==================
 
-    Davide Alberani <da@erlug.linux.it> (C) 2016
+    Davide Alberani <da@erlug.linux.it> (C) 2016-2019
     Released under the terms of the CC BY-SA license: https://creativecommons.org/licenses/by-sa/4.0/
