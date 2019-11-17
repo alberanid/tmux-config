@@ -1,7 +1,7 @@
 Installation
 ============
 
-    git clone git://github.com/alberanid/tmux-config.git ~/.tmux
+    git clone https://github.com/alberanid/tmux-config.git ~/.tmux
     ln -s ~/.tmux/tmux.conf ~/.tmux.conf
     cd ~/.tmux
     git submodule init
