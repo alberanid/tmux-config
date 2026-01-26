@@ -1,3 +1,9 @@
 [submodule "plugins/tpm"]
 	path = plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "plugins/tmux-colors-solarized"]
+	path = plugins/tmux-colors-solarized
+	url = https://git::@github.com/seebi/tmux-colors-solarized
+[submodule "plugins/tmux-resurrect"]
+	path = plugins/tmux-resurrect
+	url = https://git::@github.com/tmux-plugins/tmux-resurrect
