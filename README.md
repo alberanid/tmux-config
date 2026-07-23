@@ -1,58 +1,97 @@
-Installation
-============
+# tmux-config
 
-    git clone https://github.com/alberanid/tmux-config.git ~/.tmux
-    ln -s ~/.tmux/tmux.conf ~/.tmux.conf
-    cd ~/.tmux
-    git submodule init
-    git submodule update
-    # now run tmux and press ctrl+a I
+Personal tmux setup with:
 
+- Prefix remapped from Ctrl+b to Ctrl+a
+- TPM plugin manager
+- Catppuccin theme (currently macchiato)
+- tmux-resurrect for save/restore
+- Mouse support and sane pane/window defaults
 
-Requirements
-============
+## Installation
 
-tmux 1.9 or later. An unofficial Ubuntu 14.04 backport can be found here: https://launchpad.net/~pi-rho/+archive/ubuntu/dev
+Clone and link:
 
+```bash
+git clone --recurse-submodules https://github.com/alberanid/tmux-config.git ~/.tmux
+ln -s ~/.tmux/tmux.conf ~/.tmux.conf
+```
 
-Main commands and shortcuts
-===========================
+If you already cloned without submodules:
 
-The default ctrl+b escape is remapped to **ctrl+a**.
+```bash
+cd ~/.tmux
+git submodule update --init --recursive
+```
 
-**Layout (tmux-resurrect):**
-* **ctrl+a ctrl+s** save current layout (window, splits, working directories, ...)
-* **ctrl+a ctrl+r** restore saved layout
+Then start tmux and run:
 
-**Windows:**
-* **ctrl+a c** to create a window
-* **ctrl+a X** to change window (where X is window's number)
-* **ctrl+a ,** to rename a window
+- Ctrl+a I to install/update TPM plugins
 
-**Splits:**
-* **ctrl+a v** split vertically
-* **ctrl+a s** split horizontally
-* **ctrl+a Left/Right/Up/Down** move to another split
-* **ctrl+a ctrl+Left/Right/Up/Down** resize split
-* **ctrl+a &lt;SPACE&gt;** convert a vertical split to horizontal and vice-versa
+## Requirements
 
-**Copy mode:**
-* **ctrl+a [** enter copy mode (**ctrl+a PageUp** to move immediately)
-* **ctrl+&lt;space&gt;** begin to copy
-* **ctrl+w** copy selected text
-* **ctrl+a ]** paste copied text
-* **ESC** quit copy mode
+- tmux 3.2+ recommended (Catppuccin works best on modern tmux)
+- A Nerd Font is recommended for full icon rendering in the status line
 
-**Sessions:**
-* **ctrl+a d** detach
-* **tmux new [-s name]** start a new session
-* **tmux a [-t name]** attach to a session
-* **tmux ls** list sessions
-* **kill-session -t name** kill a session
+## Main Commands And Shortcuts
 
+The default prefix Ctrl+b is remapped to Ctrl+a.
 
-Author and license
-==================
+### Layout (tmux-resurrect)
 
-    Davide Alberani <da@erlug.linux.it> (C) 2016-2019
-    Released under the terms of the CC BY-SA license: https://creativecommons.org/licenses/by-sa/4.0/
+- Ctrl+a Ctrl+s: save current layout (windows, splits, paths, ...)
+- Ctrl+a Ctrl+r: restore saved layout
+
+### Windows
+
+- Ctrl+a c: create a window
+- Ctrl+a X: switch to window number X
+- Ctrl+a ,: rename current window
+
+### Splits And Pane Navigation
+
+- Ctrl+a v: split vertically
+- Ctrl+a s: split horizontally
+- Ctrl+a h/j/k/l: move to pane left/down/up/right
+- Alt+h/j/k/l: move between panes without prefix
+- Ctrl+a Ctrl+Left/Right/Up/Down: resize current pane
+- Ctrl+a Space: cycle pane layouts
+
+### Copy Mode
+
+- Ctrl+a [: enter copy mode
+- Ctrl+a PageUp: enter copy mode and scroll immediately
+- Ctrl+a ]: paste copied text
+- Esc: quit copy mode
+
+Note: copy selection keys inside copy mode depend on your tmux key-table mode and terminal.
+
+### Session Basics
+
+- Ctrl+a d: detach session
+- tmux new -s name: start a named session
+- tmux a -t name: attach to a named session
+- tmux ls: list sessions
+- tmux kill-session -t name: kill a session
+
+## Included Plugins
+
+Configured in tmux.conf:
+
+- tmux-plugins/tpm
+- catppuccin/tmux (v2.3.0)
+- tmux-plugins/tmux-resurrect (v4.0.0)
+
+## Extra Defaults In This Config
+
+- Mouse mode enabled
+- 256-color + RGB terminal features for tmux/xterm
+- Large history buffer (50000 lines)
+- Reload config with Ctrl+a r
+
+## Author And License
+
+Davide Alberani <da@erlug.linux.it> (C) 2016-2026
+
+Released under CC BY-SA 4.0:
+https://creativecommons.org/licenses/by-sa/4.0/
