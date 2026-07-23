@@ -91,7 +91,7 @@ Configured in tmux.conf:
 
 ## Author And License
 
-Davide Alberani <da@erlug.linux.it> (C) 2016-2026
+Davide Alberani <da@mimante.net> (C) 2016-2026
 
 Released under CC BY-SA 4.0:
 https://creativecommons.org/licenses/by-sa/4.0/
